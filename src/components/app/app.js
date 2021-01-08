@@ -1,12 +1,13 @@
-import { Routes, Route } from 'react-router-dom';
-
-import MarkettingForm from '../routes/marketting-form';
+import { Switch, Route } from "react-router-dom";
+import Demo from "../../routes/demo";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<MarkettingForm />} />
-    </Routes>
+    <Switch>
+      <Route path="/">
+        <Demo />
+      </Route>
+    </Switch>
   );
 }
 

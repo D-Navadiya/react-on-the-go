@@ -1,12 +1,7 @@
-import { BrowserRouter as Router } from 'react-router-dom';
-import { ChakraProvider } from '@chakra-ui/react';
+import { BrowserRouter as Router } from "react-router-dom";
 
 function AppProviders({ children }) {
-  return (
-    <ChakraProvider>
-      <Router>{children}</Router>
-    </ChakraProvider>
-  );
+  return <Router>{children}</Router>;
 }
 
 export { AppProviders };
