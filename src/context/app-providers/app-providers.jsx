@@ -4,4 +4,4 @@ function AppProviders({ children }) {
   return <Router>{children}</Router>;
 }
 
-export { AppProviders };
+export default AppProviders;
